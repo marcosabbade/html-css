@@ -17,6 +17,7 @@
 * {
     padding: 0px;
     margin: 0px;
+    font-size: 1em;
 }
 
 :root {
@@ -28,6 +29,7 @@
 html, body {
     min-height: 100vh;
     background-color: rgb(117, 116, 116);
+    font-family: var(--fonte1);
 }
 
 header {
@@ -36,11 +38,10 @@ header {
     text-align: center;
     background-color: black;
     padding: 50px;
-    margin-bottom: 20px;
 }
 
 header > h1 {
-    font-size: 90px;
+    font-size: 10vw;
     font-family: var(--fonte2);
     font-variant: small-caps;
 }
@@ -51,10 +52,12 @@ header > p {
 }
 
 section {
+    font-family: var(--fonte3);
     padding-top: 10vh;
     padding-bottom: 10vh;
     line-height: 2em;
     padding-left: 30px;
+    font-size: 2em;
 }
 
 .normal {
