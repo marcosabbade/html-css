@@ -57,7 +57,7 @@ section {
     padding-bottom: 10vh;
     line-height: 2em;
     padding-left: 30px;
-    font-size: 2em;
+    font-size: 4.5vw;
 }
 
 .normal {
@@ -72,7 +72,8 @@ section {
 
 section.imagem > p {
     background-color: rgba(0, 0, 0, 0.26);
-    width: 400px; 
+    display: inline-block;
+    padding: 10px;
 }
 
 a {
