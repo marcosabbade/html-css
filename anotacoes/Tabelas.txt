@@ -1,0 +1,9 @@
+  As tabelas mais simples em HTML5 seguem a seguinte hierarquia:
+
+ table = tabela
+           table rows = linha de tabela
+               table header = cabeçalho de tabela
+               table data = dado da tabela
+
+Na versão 5 do HTML (HTML5), a W3C coloca o fechamento das tags <td> e <tr> como opcional.
+Se a hierarquia não for seguida, os seus dados da tabela podem ficar embaralhados.
