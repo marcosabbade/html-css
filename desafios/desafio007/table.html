@@ -8,12 +8,12 @@
     <style>
         body {
             font-family: Arial, Helvetica, sans-serif;
-            background-color: rgb(85, 85, 85);
         }
 
         table {
             border-collapse: collapse;
             width: 500px;
+            height: 600px;
         }
 
         caption {
@@ -45,25 +45,33 @@
         .n {
             text-align: center;
         }
+
+        .f {
+            background-color: gray;
+            color: white;
+        }
     </style>
 </head>
 <body>
-    <h1>Desafio</h1>
-    <table>
+    <table class="1">
         <caption>
             Boletim
         </caption>
         <thead>
             <tr>
-                <th rowspan="3">Área</th>
-                <th rowspan="3">Disciplinas</th>
-                <th colspan="2">Notas</th>
-                <th rowspan="3">Média</th>
+                <th rowspan="3" scope="col">Área</th>
+                <th rowspan="3" scope="col">Disciplinas</th>
+                <th colspan="2" scope="colgroup">Notas</th>
+                <th rowspan="3" scope="col">Média</th>
+                <tr>
+                    <td>Nota 1</td>
+                    <td>Nota 2</td>
+                </tr>
             </tr>
         </thead>
         <tbody>
             <tr>
-                <th rowspan="4">Exatas</th>
+                <th rowspan="4" scope="rowgroup">Exatas</th>
                 <td>Matemática</td>
                 <td class="n">0.0</td>
                 <td class="n">0.0</td>
@@ -88,13 +96,28 @@
                 <td class="n">0.0</td>
                 <td class="n">0.0</td>
             </tr>
-        </tbody>
-        <tfoot>
             <tr>
-                <th colspan="4">Média de exatas</th>
+                <th colspan="4" class="f" scope="row">Média de exatas</th>
+                <td class="n f">0.0</td>
+            </tr>
+            <tr>
+                <th rowspan="2" scope="rowgroup">Humanas</th>
+                <td>História</td>
+                <td class="n">0.0</td>
+                <td class="n">0.0</td>
                 <td class="n">0.0</td>
             </tr>
-        </tfoot>
+            <tr>
+                <td>Geografia</td>
+                <td class="n">0.0</td>
+                <td class="n"> 0.0</td>
+                <td class="n">0.0</td>
+            </tr>
+            <tr>
+                <th colspan="4" class="f" scope="row">Média de humanas</th>
+                <td class="n f">0.0</td>
+            </tr>
+        </tbody>
     </table>
 </body>
 </html>
