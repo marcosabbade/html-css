@@ -1,0 +1,20 @@
+Tamanho padrão do iframe: 300x150
+
+borda do iframe: frameborder="0 ou qualquer número"
+0= false
+1,2,3...∞=true (somente borda de 1px, caso queira mudar, altere pela css)
+
+frameborder no estilo
+frameborder: 1px(tamanho da borda), dashed(estilo da borda, black(cor da borda).);
+
+para mudar a altura: height="valor"
+para mudar a largura: width="valor"
+
+caso esteja com uma configuração diferente na sua css, essa configuração vai sobrepor o estilo inline
+
+para alterar a rolagem vertical do site: scolling="auto,no,yes"
+auto= não altera nada
+
+yes= caso o site exceder o limite de width e height, ele criará uma rolagem vertical 
+
+no= o site não vai criar a rolagem (não funciona no chrome do windows, somente no do linux)
